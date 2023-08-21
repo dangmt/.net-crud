@@ -1,0 +1,79 @@
+D:\32787\new crud 1\bin\Debug\net7.0\appsettings.Development.json
+D:\32787\new crud 1\bin\Debug\net7.0\appsettings.json
+D:\32787\new crud 1\bin\Debug\net7.0\new crud 1.exe
+d:\32787\new crud 1\bin\Debug\net7.0\new crud 1.deps.json
+d:\32787\new crud 1\bin\Debug\net7.0\new crud 1.runtimeconfig.json
+D:\32787\new crud 1\bin\Debug\net7.0\new crud 1.dll
+D:\32787\new crud 1\bin\Debug\net7.0\new crud 1.pdb
+D:\32787\new crud 1\bin\Debug\net7.0\EntityFramework.SqlServer.dll
+D:\32787\new crud 1\bin\Debug\net7.0\EntityFramework.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Google.Protobuf.dll
+D:\32787\new crud 1\bin\Debug\net7.0\K4os.Compression.LZ4.dll
+D:\32787\new crud 1\bin\Debug\net7.0\K4os.Compression.LZ4.Streams.dll
+D:\32787\new crud 1\bin\Debug\net7.0\K4os.Hash.xxHash.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\32787\new crud 1\bin\Debug\net7.0\MySql.Data.dll
+D:\32787\new crud 1\bin\Debug\net7.0\MySql.Data.EntityFramework.dll
+D:\32787\new crud 1\bin\Debug\net7.0\MySql.Data.EntityFrameworkCore.dll
+D:\32787\new crud 1\bin\Debug\net7.0\MySql.EntityFrameworkCore.dll
+D:\32787\new crud 1\bin\Debug\net7.0\MySqlConnector.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\32787\new crud 1\bin\Debug\net7.0\BouncyCastle.Crypto.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\32787\new crud 1\bin\Debug\net7.0\System.CodeDom.dll
+D:\32787\new crud 1\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\32787\new crud 1\bin\Debug\net7.0\System.Data.SqlClient.dll
+D:\32787\new crud 1\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\32787\new crud 1\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\32787\new crud 1\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\32787\new crud 1\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\32787\new crud 1\bin\Debug\net7.0\ZstdSharp.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win-x64\native\comerr64.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win-x64\native\gssapi64.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win-x64\native\k5sprt64.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win-x64\native\krb5_64.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win-x64\native\krbcc64.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\32787\new crud 1\obj\Debug\net7.0\new crud 1.csproj.AssemblyReference.cache
+D:\32787\new crud 1\obj\Debug\net7.0\new crud 1.GeneratedMSBuildEditorConfig.editorconfig
+D:\32787\new crud 1\obj\Debug\net7.0\new crud 1.AssemblyInfoInputs.cache
+D:\32787\new crud 1\obj\Debug\net7.0\new crud 1.AssemblyInfo.cs
+D:\32787\new crud 1\obj\Debug\net7.0\new crud 1.csproj.CoreCompileInputs.cache
+D:\32787\new crud 1\obj\Debug\net7.0\new crud 1.MvcApplicationPartsAssemblyInfo.cs
+D:\32787\new crud 1\obj\Debug\net7.0\new crud 1.MvcApplicationPartsAssemblyInfo.cache
+D:\32787\new crud 1\obj\Debug\net7.0\staticwebassets\msbuild.new crud 1.Microsoft.AspNetCore.StaticWebAssets.props
+D:\32787\new crud 1\obj\Debug\net7.0\staticwebassets\msbuild.build.new crud 1.props
+D:\32787\new crud 1\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.new crud 1.props
+D:\32787\new crud 1\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.new crud 1.props
+D:\32787\new crud 1\obj\Debug\net7.0\staticwebassets.pack.json
+D:\32787\new crud 1\obj\Debug\net7.0\staticwebassets.build.json
+D:\32787\new crud 1\obj\Debug\net7.0\staticwebassets.development.json
+D:\32787\new crud 1\obj\Debug\net7.0\scopedcss\bundle\new crud 1.styles.css
+d:\32787\new crud 1\obj\Debug\net7.0\new crud 1.csproj.CopyComplete
+D:\32787\new crud 1\obj\Debug\net7.0\new crud 1.dll
+D:\32787\new crud 1\obj\Debug\net7.0\refint\new crud 1.dll
+D:\32787\new crud 1\obj\Debug\net7.0\new crud 1.pdb
+d:\32787\new crud 1\obj\Debug\net7.0\new crud 1.genruntimeconfig.cache
+d:\32787\new crud 1\obj\Debug\net7.0\ref\new crud 1.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\32787\new crud 1\bin\Debug\net7.0\PayPal.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Stripe.net.dll
+D:\32787\new crud 1\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Humanizer.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\32787\new crud 1\bin\Debug\net7.0\Mono.TextTemplating.dll
