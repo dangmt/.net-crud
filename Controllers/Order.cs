@@ -45,8 +45,8 @@ namespace YourNamespace.Controllers
                     {
                         OrderItem orderItem = new OrderItem
                         {
-                            Order = order,
-                            Product = cartItem.Product,
+                            OrderId = order.Id,
+                            ProductId = cartItem.ProductId,
                             Quantity = cartItem.Quantity
                         };
                         _context.OrderItems.Add(orderItem);

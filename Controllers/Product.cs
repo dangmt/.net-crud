@@ -44,7 +44,7 @@ namespace YourNamespace.Controllers
         [HttpGet("/products")]
         public IActionResult GetAllProducts()
         {
-            var products = _context.Products.Include(p => p.OrderItems).Include(p => p.CartItems).ToList();
+            var products = _context.Products.Include(p => p.CartItems).Include(p => p.OrderItems).ToList();
             return Ok(products);
         }
 
