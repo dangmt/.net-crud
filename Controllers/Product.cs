@@ -129,45 +129,59 @@ namespace YourNamespace.Controllers
                 System.IO.File.Delete(oldImagePath);
         }
         [HttpGet("/products/search")]
-        public async Task<ActionResult<IEnumerable<Product>>> GetAllProducts(
-        [FromForm(Name = "keyword")] string? keyword,
-        [FromForm(Name = "sort")] string sortField = "id",
-        [FromForm(Name = "order")] string sortOrder = "asc",
-        [FromForm(Name = "page")] int page = 0,
-        [FromForm(Name = "size")] int size = 10)
+        // public async Task<IActionResult> GetAllProducts([FromBody] ProductSearchParameters parameters)
+        public async Task<IActionResult> GetAllProducts(
+            [FromForm] string? keyword,
+            [FromForm(Name = "sort")] string? sortField = "id",
+            [FromForm(Name = "order")] string? sortOrder = "asc",
+            [FromForm] int page = 0,
+            [FromForm] int size = 10)
         {
-            var isAscending = string.Equals(sortOrder, "asc", StringComparison.OrdinalIgnoreCase);
+            var skip = page * size;
+            var limit = size;
 
             var query = _context.Products.AsQueryable();
 
-            if (!string.IsNullOrWhiteSpace(keyword))
+            if (!string.IsNullOrEmpty(keyword))
             {
-                var normalizedKeyword = keyword.ToUpper(); // Convert keyword to uppercase
-                query = query.Where(p => p.Name.ToUpper().Contains(normalizedKeyword));
+                query = query.Where(product => EF.Functions.Like(product.Name, $"%{keyword}%"));
             }
 
-
-            query = sortField switch
+            switch (sortField)
             {
-                "id" => isAscending ? query.OrderBy(p => p.Id) : query.OrderByDescending(p => p.Id),
-                "name" => isAscending ? query.OrderBy(p => p.Name) : query.OrderByDescending(p => p.Name),
-                // Add more cases for other sort fields if needed
-                _ => query
-            };
+                case "name":
+                    query = sortOrder == "asc"
+                        ? query.OrderBy(p => p.Name)
+                        : query.OrderByDescending(p => p.Name);
+                    break;
+                case "price":
+                    query = sortOrder == "asc"
+                        ? query.OrderBy(p => p.Price)
+                        : query.OrderByDescending(p => p.Price);
+                    break;
+                default:
+                    query = sortOrder == "asc"
+                        ? query.OrderBy(p => p.Id)
+                        : query.OrderByDescending(p => p.Id);
+                    break;
+            }
 
             var totalCount = await query.CountAsync();
+            var products = await query
+                .Skip(skip)
+                .Take(limit)
+                .ToListAsync();
 
-            var products = await query.Skip(page * size).Take(size).ToListAsync();
-
-            return Ok(new
+            var result = new
             {
                 Items = products,
                 Page = page,
                 PageSize = size,
                 TotalCount = totalCount
-            });
-        }
+            };
 
+            return Ok(result);
+        }
     }
 }
 
