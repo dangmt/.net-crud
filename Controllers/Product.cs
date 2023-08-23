@@ -136,7 +136,7 @@ namespace YourNamespace.Controllers
         [FromForm(Name = "page")] int page = 0,
         [FromForm(Name = "size")] int size = 10)
         {
-            var isAscending = sortOrder == "asc";
+            var isAscending = string.Equals(sortOrder, "asc", StringComparison.OrdinalIgnoreCase);
 
             var query = _context.Products.AsQueryable();
 
