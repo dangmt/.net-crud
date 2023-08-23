@@ -16,6 +16,8 @@
           "MySql.Data.EntityFramework": "8.1.0",
           "MySql.Data.EntityFrameworkCore": "8.0.22",
           "MySql.EntityFrameworkCore": "7.0.5",
+          "PagedList": "1.17.0",
+          "PagedList.EntityFramework": "1.0.1",
           "PayPal": "1.9.1",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
           "Stripe.net": "42.1.0",
@@ -357,6 +359,26 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "PagedList/1.17.0": {
+        "runtime": {
+          "lib/net40/PagedList.dll": {
+            "assemblyVersion": "1.17.0.0",
+            "fileVersion": "1.17.0.0"
+          }
+        }
+      },
+      "PagedList.EntityFramework/1.0.1": {
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "PagedList": "1.17.0"
+        },
+        "runtime": {
+          "lib/net45/PagedList.EntityFramework.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
           }
         }
       },
@@ -933,6 +955,20 @@
       "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "path": "newtonsoft.json/12.0.3",
       "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "PagedList/1.17.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ou6F3WKXh49hOo0TxWM+SkIGuKllYPuPPvnSYOlQ1sTrtuEyuDUhYbSJd5Sdb06i/sWUJZTjiUecEs3Ht/Hx3g==",
+      "path": "pagedlist/1.17.0",
+      "hashPath": "pagedlist.1.17.0.nupkg.sha512"
+    },
+    "PagedList.EntityFramework/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fzveod9cs0OABQK4HTTdD01BugMBu/GKpMoqMZ51XQPfpUbbvl3NodCCF0Pp11G0z62SG/FEx0kyO+arJr97uA==",
+      "path": "pagedlist.entityframework/1.0.1",
+      "hashPath": "pagedlist.entityframework.1.0.1.nupkg.sha512"
     },
     "PayPal/1.9.1": {
       "type": "package",

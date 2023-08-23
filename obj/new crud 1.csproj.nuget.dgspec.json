@@ -75,6 +75,14 @@
               "target": "Package",
               "version": "[7.0.5, )"
             },
+            "PagedList": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "PagedList.EntityFramework": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "PayPal": {
               "target": "Package",
               "version": "[1.9.1, )"

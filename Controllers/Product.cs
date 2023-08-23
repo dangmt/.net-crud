@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 using YourNamespace.Models;
 using Microsoft.EntityFrameworkCore;
 using Namespace;
+using PagedList;
+using System.Reflection;
+using MySql.Data.EntityFrameworkCore.Extensions;
+using System.Data.SqlClient;
 
 namespace YourNamespace.Controllers
 {
@@ -61,7 +65,7 @@ namespace YourNamespace.Controllers
         }
 
         [HttpPut("/products/{id}")]
-        public IActionResult UpdateProduct(long id, [FromForm] string name, [FromForm] double? price, [FromForm] IFormFile image)
+        public IActionResult UpdateProduct(long id, [FromForm] string name, [FromForm] double? price, [FromForm] IFormFile? image)
         {
             var productToUpdate = _context.Products.Find(id);
 
@@ -124,6 +128,46 @@ namespace YourNamespace.Controllers
             if (System.IO.File.Exists(oldImagePath))
                 System.IO.File.Delete(oldImagePath);
         }
+        [HttpGet("/products/search")]
+        public async Task<ActionResult<IEnumerable<Product>>> GetAllProducts(
+        [FromForm(Name = "keyword")] string? keyword,
+        [FromForm(Name = "sort")] string sortField = "id",
+        [FromForm(Name = "order")] string sortOrder = "asc",
+        [FromForm(Name = "page")] int page = 0,
+        [FromForm(Name = "size")] int size = 10)
+        {
+            var isAscending = sortOrder == "asc";
+
+            var query = _context.Products.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(keyword))
+            {
+                var normalizedKeyword = keyword.ToUpper(); // Convert keyword to uppercase
+                query = query.Where(p => p.Name.ToUpper().Contains(normalizedKeyword));
+            }
+
+
+            query = sortField switch
+            {
+                "id" => isAscending ? query.OrderBy(p => p.Id) : query.OrderByDescending(p => p.Id),
+                "name" => isAscending ? query.OrderBy(p => p.Name) : query.OrderByDescending(p => p.Name),
+                // Add more cases for other sort fields if needed
+                _ => query
+            };
+
+            var totalCount = await query.CountAsync();
+
+            var products = await query.Skip(page * size).Take(size).ToListAsync();
+
+            return Ok(new
+            {
+                Items = products,
+                Page = page,
+                PageSize = size,
+                TotalCount = totalCount
+            });
+        }
 
     }
 }
+

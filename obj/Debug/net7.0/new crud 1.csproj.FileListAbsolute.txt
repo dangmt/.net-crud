@@ -77,3 +77,5 @@ D:\32787\new crud 1\bin\Debug\net7.0\Humanizer.dll
 D:\32787\new crud 1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\32787\new crud 1\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 D:\32787\new crud 1\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\32787\new crud 1\bin\Debug\net7.0\PagedList.dll
+D:\32787\new crud 1\bin\Debug\net7.0\PagedList.EntityFramework.dll

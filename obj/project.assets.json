@@ -669,6 +669,36 @@
           }
         }
       },
+      "PagedList/1.17.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/PagedList.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/PagedList.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "PagedList.EntityFramework/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.1.1",
+          "PagedList": "1.17.0"
+        },
+        "compile": {
+          "lib/net45/PagedList.EntityFramework.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/PagedList.EntityFramework.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "PayPal/1.9.1": {
         "type": "package",
         "dependencies": {
@@ -2446,6 +2476,33 @@
         "packageIcon.png"
       ]
     },
+    "PagedList/1.17.0": {
+      "sha512": "Ou6F3WKXh49hOo0TxWM+SkIGuKllYPuPPvnSYOlQ1sTrtuEyuDUhYbSJd5Sdb06i/sWUJZTjiUecEs3Ht/Hx3g==",
+      "type": "package",
+      "path": "pagedlist/1.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/PagedList.dll",
+        "lib/net40/PagedList.xml",
+        "pagedlist.1.17.0.nupkg.sha512",
+        "pagedlist.nuspec"
+      ]
+    },
+    "PagedList.EntityFramework/1.0.1": {
+      "sha512": "fzveod9cs0OABQK4HTTdD01BugMBu/GKpMoqMZ51XQPfpUbbvl3NodCCF0Pp11G0z62SG/FEx0kyO+arJr97uA==",
+      "type": "package",
+      "path": "pagedlist.entityframework/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/PagedList.EntityFramework.dll",
+        "lib/net45/PagedList.EntityFramework.pdb",
+        "lib/net45/PagedList.EntityFramework.xml",
+        "pagedlist.entityframework.1.0.1.nupkg.sha512",
+        "pagedlist.entityframework.nuspec"
+      ]
+    },
     "PayPal/1.9.1": {
       "sha512": "b3vq6Lc9CwSooCX2tsZ02zb7E/K/cA6EILCoMynue+ZeVuitJNqt0YwxPnp7uN0Pccob02oDlpAjRLH+GRCRxA==",
       "type": "package",
@@ -3904,6 +3961,8 @@
       "MySql.Data.EntityFramework >= 8.1.0",
       "MySql.Data.EntityFrameworkCore >= 8.0.22",
       "MySql.EntityFrameworkCore >= 7.0.5",
+      "PagedList >= 1.17.0",
+      "PagedList.EntityFramework >= 1.0.1",
       "PayPal >= 1.9.1",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0",
       "Stripe.net >= 42.1.0",
@@ -3985,6 +4044,14 @@
             "target": "Package",
             "version": "[7.0.5, )"
           },
+          "PagedList": {
+            "target": "Package",
+            "version": "[1.17.0, )"
+          },
+          "PagedList.EntityFramework": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "PayPal": {
             "target": "Package",
             "version": "[1.9.1, )"
@@ -4030,6 +4097,26 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PagedList 1.17.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "PagedList",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PagedList.EntityFramework 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "PagedList.EntityFramework",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
