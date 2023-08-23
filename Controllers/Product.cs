@@ -132,8 +132,8 @@ namespace YourNamespace.Controllers
         // public async Task<IActionResult> GetAllProducts([FromBody] ProductSearchParameters parameters)
         public async Task<IActionResult> GetAllProducts(
             [FromForm] string? keyword,
-            [FromForm(Name = "sort")] string? sortField = "id",
-            [FromForm(Name = "order")] string? sortOrder = "asc",
+            [FromForm(Name = "sort")] string? sortField,
+            [FromForm(Name = "order")] string? sortOrder,
             [FromForm] int page = 0,
             [FromForm] int size = 10)
         {
@@ -150,17 +150,17 @@ namespace YourNamespace.Controllers
             switch (sortField)
             {
                 case "name":
-                    query = sortOrder == "asc"
+                    query = sortOrder.ToLower() == "asc"
                         ? query.OrderBy(p => p.Name)
                         : query.OrderByDescending(p => p.Name);
                     break;
                 case "price":
-                    query = sortOrder == "asc"
+                    query = sortOrder.ToLower() == "asc"
                         ? query.OrderBy(p => p.Price)
                         : query.OrderByDescending(p => p.Price);
                     break;
                 default:
-                    query = sortOrder == "asc"
+                    query = sortOrder.ToLower() == "asc"
                         ? query.OrderBy(p => p.Id)
                         : query.OrderByDescending(p => p.Id);
                     break;
